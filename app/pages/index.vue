@@ -1,14 +1,14 @@
 <script setup>
-const handleClick = () => {
-  alert("ボタンがクリックされました");
+import { ref } from "vue";
+const count = ref(0);
+const increment = () => {
+  count.value++;
 };
 </script>
 
 <template>
   <div>
-    <h1>index</h1>
-    <MyButton text="クリックしてください" @click="handleClick" />
-    <br />
-    <NuxtLink to="/about"> Aboutページへ </NuxtLink>
+    <p>カウント：{{ count }}</p>
+    <button @click="increment">Increment</button>
   </div>
 </template>
