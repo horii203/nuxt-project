@@ -9,6 +9,11 @@ const addFruit = () => {
   fruits.value.push(fruit.value);
   fruit.value = "";
 };
+
+const deleteFruit = (index) => {
+  // splice は配列から要素を削除する
+  fruits.value.splice(index, 1);
+};
 </script>
 
 <template>
@@ -20,8 +25,9 @@ const addFruit = () => {
     <button @click="addFruit">追加</button>
 
     <ul>
-      <li v-for="item in fruits" :key="item">
+      <li v-for="(item, index) in fruits" :key="item">
         {{ item }}
+        <button @click="deleteFruit(index)">削除</button>
       </li>
     </ul>
   </div>
