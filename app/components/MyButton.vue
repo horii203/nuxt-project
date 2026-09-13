@@ -2,8 +2,9 @@
 defineProps({
   text: String,
 });
+const emit = defineEmits(["click"]);
 </script>
 
 <template>
-  <button>{{ text }}</button>
+  <button @click="emit('click')">{{ text }}</button>
 </template>
