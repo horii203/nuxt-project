@@ -1,8 +1,4 @@
 <template>
-  <div>
-    <h1>about</h1>
-    <MyButton text="詳しくみる" />
-    <br />
-    <NuxtLink to="/"> トップページへ戻る </NuxtLink>
-  </div>
+  <h1>Aboutページ</h1>
+  <p>Aboutページの内容です。</p>
 </template>
