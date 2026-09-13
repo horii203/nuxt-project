@@ -1,3 +1,9 @@
+<script setup>
+defineProps({
+  text: String,
+});
+</script>
+
 <template>
-  <button>クリックしてください</button>
+  <button>{{ text }}</button>
 </template>

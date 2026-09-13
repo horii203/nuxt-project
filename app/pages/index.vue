@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>index</h1>
-    <MyButton />
+    <MyButton text="クリックしてください" />
     <br />
     <NuxtLink to="/about"> Aboutページへ </NuxtLink>
   </div>
